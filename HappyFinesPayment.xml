@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Happy Scenario to Make Fines Payment" verbose="1" >
+    <test name="Paying License Fines">
+        <classes>
+            <class name="PayingLicenseFines">
+                <methods>
+                    <include name="loginWithValidData"/>
+                    <include name="selectValidProsecution"/>
+                    <include name="payingLicFines"/>
+                    <include name="payPOSLicFines"/>
+                    <exclude name=""/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
